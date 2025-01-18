@@ -1,0 +1,21 @@
+img{
+    margin: 0 5px 0 0;
+}
+span{
+    margin: 0 0 5px 0;
+}
+.rounded-img {
+    border-radius: 50%; /* Makes the image circular */
+    border: 3px solid #a9dceb; /* Adds a circular border to the image */
+    width: 100px; /* Ensures consistent width */
+    height: 100px; /* Ensures consistent height */
+    object-fit: cover; /* Ensures the image scales correctly without distortion */
+  }
+  
+
+  .card {
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border: 0.5px solid #a9dceb;
+  }
+  

@@ -1,0 +1,27 @@
+<div class = "card">
+    <div class = "card-body ">
+        
+    <div class="text-center">
+        <img [src]="userItem.image" class="card-img-top rounded-img" alt="..." />
+        </div>
+    
+    <h5 class = "card-title">{{userItem.username}}</h5>
+        
+        
+    @if(userItem.userType == 'Admin') {
+        <span class="badge text-bg-danger">Admin</span>
+    } 
+    @if(userItem.userType == 'Moderator'){
+        <span class="badge text-bg-warning">Moderator</span>
+    }
+    @if(userItem.userType == 'User'){
+        <span class="badge text-bg-success">User</span>
+    }
+
+    <p><img src="https://cdn-icons-png.flaticon.com/256/526/526901.png" width="20" height="20">{{userItem.email}}</p>
+    <p><img src="https://cdn-icons-png.flaticon.com/256/724/724664.png" width="20" height="20">{{userItem.phone}}</p>
+    <p><img src="https://cdn-icons-png.flaticon.com/256/9324/9324893.png" width="20" height="20">{{userItem.birthdate}}</p>
+
+    
+    </div>
+</div>

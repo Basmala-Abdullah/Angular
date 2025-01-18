@@ -1,0 +1,12 @@
+
+<div class = "container my-5">
+    <div class = "row row cols-1 row-cols-md-3 g-4">
+        @for(user of users; track user.id){
+            <div class = "col">  
+                <app-user-card [userItem] = "user">
+                    <!-- "user" -> refers to user in for loop while we write userItem in parent and write it as input in child -->
+                </app-user-card>
+            </div>
+        }        
+    </div>
+</div>
