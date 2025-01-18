@@ -1,0 +1,26 @@
+
+h1 {
+  font-size: 3rem;
+  color:antiquewhite;
+}
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #003976;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+div{
+  background-color: #080C0C;
+  padding: 25px 10px;
+  color:rgb(237, 214, 184);
+}
+
+h2{
+  font-size: 2rem;
+  color:antiquewhite;
+}

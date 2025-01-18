@@ -1,0 +1,25 @@
+div{
+    text-align: center;
+    padding: 50px 0;
+    background-color: #0D0632;
+    background-image: url(https://media.licdn.com/dms/image/D4E12AQFX7TfBIsnz9w/article-cover_image-shrink_720_1280/0/1697197601996?e=2147483647&v=beta&t=lLUNWNfHRV_v8oVye-rM2bFlU7oXPKRg0YGhNJ9-_qg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 5px black;
+
+
+
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+  }
+  h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+  }
+  
