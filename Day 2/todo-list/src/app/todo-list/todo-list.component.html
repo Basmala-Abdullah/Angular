@@ -1,0 +1,11 @@
+<div>
+    <button (click)="completeItem()">Complete</button>
+    <button (click)="deleteItem()">Delete</button>
+    @if(item.completed == true){
+        <span style="text-decoration: line-through;">{{ item.text }}</span>
+    }
+    @else {
+        <span>{{ item.text }}</span>
+    }
+
+</div>

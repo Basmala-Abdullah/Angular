@@ -1,0 +1,8 @@
+<div class="form-container">
+    <h1>To-Do App!</h1>
+    <p>Add new To-Do</p>
+    <form (submit)="handleAddItem(todoInput.value)">
+        <input type="text" id="todo-list-input" name="todolistitem" #todoInput>
+        <input type="submit" id="todo-list-submit" value="Add" >
+    </form>
+</div>

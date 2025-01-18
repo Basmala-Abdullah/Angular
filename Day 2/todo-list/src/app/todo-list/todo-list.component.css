@@ -1,0 +1,31 @@
+button{
+    padding: 5px 5px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgb(161, 0, 169);;
+    border-radius: 5px;
+    border: solid 1px oldlace;
+    margin: 10px 10px;
+}
+
+button:hover{
+    background-color: rgb(222, 40, 231);
+}
+
+div{
+    background-color: rgb(252, 200, 255);
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border-radius: 20px;
+    border: solid 2px rgb(161, 0, 169);
+    background-image: url(https://img.freepik.com/free-vector/gradient-minimalist-background_23-2149989166.jpg?semt=ais_hybrid);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+
+}
+span{
+    color:rgb(161, 0, 169);
+    font-size: 1.3rem;
+    margin: 0 10px;
+}

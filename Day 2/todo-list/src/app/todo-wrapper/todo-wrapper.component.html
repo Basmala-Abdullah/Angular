@@ -1,0 +1,10 @@
+<app-todo-form  (formSendToParent)="receivedFromFormChild($event)">
+</app-todo-form>
+<div>
+    @for(item of items; track item.id){
+        <div>
+            <app-todo-list [item]="item" (complete)="handleCompleteItem($event)" (delete)="handleDeleteItem($event)">
+            </app-todo-list>
+        </div>
+    }
+</div>
