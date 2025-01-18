@@ -9,34 +9,32 @@ import { TodoListComponent } from "../todo-list/todo-list.component";
   styleUrl: './todo-wrapper.component.css'
 })
 
-export class TodoWrapperComponent implements OnInit {
+export class TodoWrapperComponent  {
+  
   items: { id: number; text: string, completed: boolean }[] = [];
   static itemsNo: number = 0;
 
-
-  ngOnInit() {
-    // Retrieve data from localStorage when the component initializes
-    const savedItems = localStorage.getItem('todoItems');
+  constructor(){
+    let savedItems = localStorage.getItem('todoItems');
     if (savedItems) {
       this.items = JSON.parse(savedItems);
-      // Update the static itemsNo to avoid ID conflicts
-      TodoWrapperComponent.itemsNo = this.items.length > 0
-        ? Math.max(...this.items.map(item => item.id))
-        : 0;
+      TodoWrapperComponent.itemsNo = this.items.length;
     }
   }
+
 
   receivedFromFormChild(item: string){
     console.log("from parent: "+item);
     if(item !== '') {
-    TodoWrapperComponent.itemsNo++;
-    this.items.push({id: TodoWrapperComponent.itemsNo, text: item, completed: false});
-    this.saveItemsToLocalStorage();
+      TodoWrapperComponent.itemsNo++;
+      this.items.push({id: TodoWrapperComponent.itemsNo, text: item, completed: false});
+      this.saveItemsToLocalStorage();
     }
   }
   
   handleDeleteItem(itemId: number) {
     this.items = this.items.filter(item => item.id !== itemId);
+    TodoWrapperComponent.itemsNo--;
     this.saveItemsToLocalStorage();
   }
 
@@ -48,7 +46,7 @@ export class TodoWrapperComponent implements OnInit {
     }
   }
 
-  private saveItemsToLocalStorage() {
+   saveItemsToLocalStorage() {
     localStorage.setItem('todoItems', JSON.stringify(this.items));
   }
 
